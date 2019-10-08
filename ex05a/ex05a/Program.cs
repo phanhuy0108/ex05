@@ -13,24 +13,24 @@ namespace ex05a
             Printa_zv1();
             Printz_a();
             PrintA_Z();
-            
-            while(true)
+
+            while (true)
             {
                 char c = Console.ReadKey().KeyChar;
-                Console.WriteLine(" "+char2code(c));
+                Console.WriteLine(" " + char2code(c));
             }
         }
         public static void Printa_zv1()
         {
             for (int i = 97; i <= 122; i++)
             {
-                Console.Write((char)i+" ");
+                Console.Write((char)i + " ");
             }
             Console.WriteLine();
         }
         public static void Printz_a()
         {
-            for (int i=122;i>=97;i--)
+            for (int i = 122; i >= 97; i--)
             {
                 Console.Write((char)i + " ");
             }
@@ -38,7 +38,7 @@ namespace ex05a
         }
         public static void PrintA_Z()
         {
-            for (int i = 65; i <= 90; i++) 
+            for (int i = 65; i <= 90; i++)
             {
                 Console.Write((char)i + " ");
             }
@@ -50,12 +50,12 @@ namespace ex05a
         }
         public static bool IsUper(char c)
         {
-            
-                if ((int)c >= 65 && c <= 90)
-                {
-                    return true;
-                }
-                return false;
+
+            if ((int)c >= 65 && c <= 90)
+            {
+                return true;
+            }
+            return false;
         }
         static bool isLower(char c)
         {
@@ -68,7 +68,7 @@ namespace ex05a
             if ((int)c >= 65 && c <= 90)
             {
                 int ch = c + 32;
-                return (char) ch;
+                return (char)ch;
             }
             else
             {
@@ -76,5 +76,6 @@ namespace ex05a
                 return (char)ch;
             }
             return ' ';
+        }
     }
 }
