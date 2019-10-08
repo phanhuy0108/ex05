@@ -13,6 +13,12 @@ namespace ex05a
             Printa_zv1();
             Printz_a();
             PrintA_Z();
+            
+            while(true)
+            {
+                char c = Console.ReadKey().KeyChar;
+                Console.WriteLine(" "+char2code(c));
+            }
         }
         public static void Printa_zv1()
         {
@@ -37,6 +43,10 @@ namespace ex05a
                 Console.Write((char)i + " ");
             }
             Console.WriteLine();
+        }
+        public static int char2code(char c)
+        {
+            return (int)c;
         }
     }
 }
