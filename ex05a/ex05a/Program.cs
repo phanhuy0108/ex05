@@ -10,6 +10,33 @@ namespace ex05a
     {
         static void Main(string[] args)
         {
+            Printa_zv1();
+            Printz_a();
+            PrintA_Z();
+        }
+        public static void Printa_zv1()
+        {
+            for (int i = 97; i <= 122; i++)
+            {
+                Console.Write((char)i+" ");
+            }
+            Console.WriteLine();
+        }
+        public static void Printz_a()
+        {
+            for (int i=122;i>=97;i--)
+            {
+                Console.Write((char)i + " ");
+            }
+            Console.WriteLine();
+        }
+        public static void PrintA_Z()
+        {
+            for (int i = 65; i <= 90; i++) 
+            {
+                Console.Write((char)i + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
