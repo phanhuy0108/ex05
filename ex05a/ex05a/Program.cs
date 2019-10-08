@@ -48,5 +48,33 @@ namespace ex05a
         {
             return (int)c;
         }
+        public static bool IsUper(char c)
+        {
+            
+                if ((int)c >= 65 && c <= 90)
+                {
+                    return true;
+                }
+                return false;
+        }
+        static bool isLower(char c)
+        {
+            if ((int)c >= 97 && c <= 122)
+                return true;
+            return false;
+        }
+        static char changeUpPer_Lower(char c)
+        {
+            if ((int)c >= 65 && c <= 90)
+            {
+                int ch = c + 32;
+                return (char) ch;
+            }
+            else
+            {
+                int ch = c - 32;
+                return (char)ch;
+            }
+            return ' ';
     }
 }
